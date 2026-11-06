@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("sm-theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<title>Samuel Mutunga · Software Developer, Systems Designer &amp; Problem Solver</title>
+<meta name="description" content="Samuel Mutunga is a software developer from Athi River, Kenya with a BSc in Computer Technology and a strong maths background. Web development, Python automation, systems design and data-driven problem solving. Open to work.">
+<meta property="og:title" content="Samuel Mutunga · Software Developer"><meta property="og:description" content="Fast websites, smart software and systems that keep working as they grow. Open to full-time, contract and freelance roles."><meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0f1e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Samuel Mutunga","jobTitle":"Software Developer","email":"mailto:stushy82@gmail.com","telephone":"+254721545228","address":{"@type":"PostalAddress","addressLocality":"Athi River","addressCountry":"KE"},"alumniOf":"Jomo Kenyatta University of Agriculture and Technology","knowsAbout":["Web development","Python","Mathematics","Software design","Systems design"],"url":"https://github.com/Samuel4678"}</script>
+</head>
+<body>
+<header id="nav">
+  <a class="logo" href="#home" aria-label="Home"><span class="mark">SM</span><b>Samuel Mutunga</b></a>
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu')">☰</button>
+  <nav onclick="document.body.classList.remove('menu')"><a href="#roles">Roles</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#scale">Scale demo</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn sm" id="navWa" target="_blank" rel="noopener">Hire me</a></nav>
+  <button class="tog" id="theme" type="button" aria-label="Switch theme"></button>
+</header>
+
+<section class="hero" id="home">
+  <div class="syms" id="syms" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-t">
+      <p class="open"><i></i> Open to full-time, contract and freelance roles</p>
+      <h1>Hi, I'm <span class="grad">Samuel</span>.<br>I build <span id="typed" class="grad"></span><span class="cur">|</span></h1>
+      <p class="lead">A software developer from Athi River, Kenya. I make fast, good-looking websites and smart software, and I love solving problems with maths and clean design.</p>
+      <div class="cta"><a class="btn" id="heroWa" target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn ghost" id="heroMail">Email me</a><a class="btn ghost" id="resume" hidden download>Download resume</a></div>
+      <ul class="facts"><li><b>BSc</b> Computer Technology, JKUAT</li><li><b>A</b> in KCSE Mathematics</li><li><b>A</b> in KCSE Computer Studies</li></ul>
+    </div>
+    <div class="avatar" id="avatar"><div class="ph" data-ph="profile"></div><span>SM</span></div>
+  </div>
+</section>
+
+<section id="roles" class="wrap sec"><p class="eyebrow c">Where I fit</p><h2 class="c">Jobs I can do for you</h2><p class="sub c">Each role below comes with a plain-English reason it helps your team or business.</p><div class="grid" id="roleGrid"></div></section>
+
+<section id="skills" class="band"><div class="wrap sec"><p class="eyebrow c">Skills</p><h2 class="c">What I know, and why it helps</h2><div class="grid" id="skillGrid"></div></div></section>
+
+<section id="projects" class="wrap sec"><p class="eyebrow c">Proof of work</p><h2 class="c">Things I've built</h2><p class="sub c">Real projects you can open and try right now.</p><div class="grid proj" id="projGrid"></div></section>
+
+<section id="scale" class="band"><div class="wrap sec split">
+  <div class="rv"><p class="eyebrow">Systems thinking</p><h2>Why smart design matters when you grow</h2><p>Some ways of solving a problem get much slower as more people use them. Others barely notice. Drag the slider to see how many steps four designs need.</p><p class="small">This is the kind of thinking I bring to every system I design: plan for growth early, so you don't pay for a rebuild later.</p></div>
+  <div class="card rv" id="scaleBox"><label>Number of users or records: <b id="nOut">1,000</b><input type="range" id="n" min="10" max="100000" step="10" value="1000"></label><div id="bars"></div></div>
+</div></section>
+
+<section id="education" class="wrap sec narrow"><p class="eyebrow c">Education</p><h2 class="c">Learning that backs the skills</h2><div class="tl" id="edu"></div></section>
+
+<section id="how" class="band"><div class="wrap sec"><p class="eyebrow c">Working with me</p><h2 class="c">What you can expect</h2><div class="grid3" id="howGrid"></div></div></section>
+
+<section id="contact" class="dark"><div class="wrap sec split">
+  <div class="rv"><p class="eyebrow">Let's talk</p><h2>Looking for a developer? Let's connect.</h2><p>I reply quickly. Send a message with the role or project and I'll get back to you.</p>
+    <div class="cl"><a class="cb wa" id="cWa" target="_blank" rel="noopener"><span>💬</span><div><b>WhatsApp</b><small>+254 721 545 228</small></div></a><a class="cb" id="cMail"><span>✉️</span><div><b>Email</b><small>stushy82@gmail.com</small></div></a><a class="cb" id="cGit" target="_blank" rel="noopener"><span>🐙</span><div><b>GitHub</b><small>github.com/Samuel4678</small></div></a><div class="cb"><span>📍</span><div><b>Based in</b><small>Athi River, Kenya</small></div></div></div></div>
+  <form class="card rv" onsubmit="return sendMsg(event)"><h3>Send a message</h3><input id="mn" placeholder="Your name" required><input id="mc" placeholder="Company or organisation (optional)"><textarea id="mm" rows="4" placeholder="Tell me about the role or project…" required></textarea><button class="btn">Send via WhatsApp</button><p class="small">or <a id="mailAlt">send it by email instead</a></p></form>
+</div></section>
+
+<footer><p>© <span id="yr"></span> Samuel Mutunga · Software Developer · Athi River, Kenya</p></footer>
+<a id="fab" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a><button id="top" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script src="app.js"></script>
+</body></html>
